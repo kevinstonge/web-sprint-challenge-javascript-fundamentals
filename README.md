@@ -41,10 +41,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 4. Describe the four rules of the 'this' keyword.
 
-    a. when 'this' is used in global/function scope, it refers to the window (browser) or global (nodeJS) object
-    b. when 'this' is used inside of an object or on an object by a Object.function() call, it refers to the object itself
-    c. when 'this' is used in an object that is instantiated with the 'new' keyword, 'this' refers to the object created by the instantiating function
-    d. when 'this' is used in a function that is invoked with 'call', or 'apply', it refers to the object passed as the first argument of the call/apply function.
+    a. GLOBAL: when 'this' is used in global/function scope, it refers to the window (browser) or global (nodeJS) object
+    b. IMPLICIT: when 'this' is used inside of an object or on an object by a Object.function() call, it refers to the object itself
+    c. NEW: when 'this' is used in an object that is instantiated with the 'new' keyword, 'this' refers to the object created by the instantiating function
+    d. EXPLICIT: when 'this' is used in a function that is invoked with 'call', or 'apply', it refers to the object passed as the first argument of the call/apply function.
 
 5. Why do we need super() in an extended class?
 
