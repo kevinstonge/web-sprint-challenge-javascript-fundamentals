@@ -36,5 +36,6 @@ CuboidMaker.prototype.surfaceArea = function() { return 2 * (this.l * this.w + t
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 
 const cuboid = new CuboidMaker(4,5,5);
+console.info("cuboid created with prototype syntax:");
 console.log(cuboid.volume()); // 100
 console.log(cuboid.surfaceArea()); // 130
