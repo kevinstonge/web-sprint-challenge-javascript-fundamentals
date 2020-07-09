@@ -27,13 +27,28 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    .forEach acts as a simple for loop, iterating over each element in the array preceeding the .forEach() block of code. .forEach doesn't return anything, it performs the actions inside of its the function block
+
+    .map returns a new array filled with items returned by the callback function it contains. The callback function will be run for each element in the original array and can be used to mutate elements of that array before outputting them to the returned map
+
 2. Explain the difference between a callback and a higher order function.
+
+    callback functions are functions that can be passed into other functions as arguments, and used inside of those 'higher order' functions. A 'higher order' function is simply a function that implements other functions inside of it.
 
 3. What is closure?
 
+    closure is a function and all of the variables/functions that it has access to both inside of its own code block, and at higher levels of scope
+
 4. Describe the four rules of the 'this' keyword.
 
+    a. GLOBAL: when 'this' is used in global/function scope, it refers to the window (browser) or global (nodeJS) object
+    b. IMPLICIT: when 'this' is used inside of an object or on an object by a Object.function() call, it refers to the object itself
+    c. NEW: when 'this' is used in an object that is instantiated with the 'new' keyword, 'this' refers to the object created by the instantiating function
+    d. EXPLICIT: when 'this' is used in a function that is invoked with 'call', or 'apply', it refers to the object passed as the first argument of the call/apply function.
+
 5. Why do we need super() in an extended class?
+
+    the point of extending a class is so that it's properties and methods can be inherited by the extended class, super() is a shortcut for accessing/reusing the code in the parent class - it passes any attributes used to create an instance of the child class to the parent class so that the newly instantiated objects of the child class will be given all of the properties and methods of the parent class (although they can be overriden by assigning them new values in the child class);
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
